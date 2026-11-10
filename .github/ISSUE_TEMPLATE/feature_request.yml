@@ -1,0 +1,30 @@
+name: Feature request
+description: Tell us what you would like CoreSpoke to do.
+labels: ["feature"]
+body:
+  - type: dropdown
+    id: site
+    attributes:
+      label: Which site is this about?
+      options:
+        - CoreSpoke hub
+        - KeepAlive
+        - Simplify API
+        - LLM Router
+        - Dispatch
+        - Flows
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you want to be able to do?
+    validations:
+      required: true
+  - type: textarea
+    id: more
+    attributes:
+      label: Why does it matter to you?
+  - type: markdown
+    attributes:
+      value: Please do not include passwords, API keys or other private data. This issue is public.
